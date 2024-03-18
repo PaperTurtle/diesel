@@ -37,9 +37,11 @@ pub(crate) mod nullable;
 #[macro_use]
 pub(crate) mod operators;
 mod case_when;
+mod date_expressions;
 pub(crate) mod select_by;
 mod sql_literal;
 pub(crate) mod subselect;
+pub use date_expressions::DateExpression;
 
 #[cfg(feature = "i-implement-a-third-party-backend-and-opt-into-breaking-changes")]
 pub use self::operators::Concat;
